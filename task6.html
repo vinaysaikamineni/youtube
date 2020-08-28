@@ -1,6 +1,16 @@
+<!DOCTYPE html>
 <html>
     <head><title>Tables</title>
         <style>
+            [class ^= a]{
+                background: yellow;
+            }
+            [class |= ghij]{
+                color: blue;
+            }
+            [class *= "mn"]{
+                background-color: aqua;
+            }
             table,th,td{
                 border: 1px solid black;
                 border-collapse: collapse;
@@ -31,37 +41,37 @@
         <h1>SEM END RESULTS</h1>
         </div>
         <table title="SEM RESULTS">
-            <tr align="center">
+            <tr align="center" class="abcd">
                 <th>Subject</th>
                 <th>Marks</th>
                 <th>Status</th>
             </tr>
-            <tr>
+            <tr class="aefg">
                 <td>ComputerNetworks</td>
                 <td>89</td>
                 <td>Pass</td>
             </tr>
-            <tr>
+            <tr class="bcde">
                 <td>MicroprocessorInterfacing</td>
                 <td>85</td>
                 <td>Pass</td>
             </tr>
-            <tr>
+            <tr class="ghij">
                 <td>DataMiningTechniques</td>
                 <td>93</td>
                 <td>Pass</td>
             </tr>
-            <tr>
+            <tr class="gklm">
                 <td>ArtificialIntelliegence</td>
                 <td>85</td>
                 <td>Pass</td>
             </tr>
-            <tr>
+            <tr class="klmn">
                 <td>StatisticsUsingPython</td>
                 <td>86</td>
                 <td>Pass</td>
             </tr>
-            <tr>
+            <tr class="opqr">
                 <td>OperatingSystems</td>
                 <td>95</td>
                 <td>Pass</td>
