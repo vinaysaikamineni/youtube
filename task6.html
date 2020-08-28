@@ -2,34 +2,22 @@
 <html>
     <head><title>Tables</title>
         <style>
-            [class ^= a]{
-                background: yellow;
-            }
-            [class |= ghij]{
-                color: blue;
-            }
-            [class *= "mn"]{
-                background-color: aqua;
-            }
-            [class |= left]{
-                text-align: left;
-            }
-            table,th,td{
-                border: 1px solid black;
-                border-collapse: collapse;
-                text-align: right;
-                padding-left: 5px;
-                padding-top: 5px;
-                padding-bottom: 5px;
-                margin-left: 38%;
-                margin-top: 3%;
-                font-size: 20px;
-            }
             table{
-                outline-color: crimson;
-                outline-style: solid;
-                outline-width: medium;
-                outline-offset: 5px;
+                border-collapse: collapse;
+                text-align: left;
+                width: 40%;
+                margin-left: 30%;
+            }
+            th,td{
+                padding: 10px;
+            }
+            th{
+                font-style: italic;
+                text-align: left;
+                font-family: serif;
+            }
+            tr:nth-child(even) {
+                background-color:darkgray;
             }
             h1{
                 padding-top:25px;
