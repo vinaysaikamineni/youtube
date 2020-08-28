@@ -13,6 +13,8 @@
                 background-image: url("man.jpg");
                 background-position: top right;
                 background-repeat: no-repeat;
+                font-family: serif;
+                font-style: italic;
             }
             .regf{
                 
@@ -21,21 +23,16 @@
     
     </head>
     <body>
-        <h1>Registration Form</h1><div class="regf">
+        <h1>Registration Form</h1><div class="regf"><pre>
         <form action="next.html">
-            Name         :<br>
-            <input type= "text" id="name"><br>
-            Mobile Number:<br>
-            <input type= "number" id="mnum"><br>
-            Choice of Course:<br>
-            <input type = "radio" id="cc" name="course">Bachelor<br>
-            <input type="radio" id = "cc1" name="course">Master<br>
-            Description:<br>
-            <textarea name="desc" rows="2" cols="10"></textarea><br>
-            Subjects of Intrest:<br>
-            <input type="checkbox" name="soi"> CLoud computing<br>
-            <input type="checkbox" name="soi"> Machine Learning<br>
+              Name:               <input type= "text" id="name"><br>
+              Mobile Number:      <input type= "number" id="mnum"><br>
+Choice of Course:   <input type = "radio" id="cc" name="course">Bachelor<br>
+                  <input type="radio" id = "cc1" name="course">Master<br>
+   Description:         <textarea name="desc" rows="2" cols="10"></textarea><br>
+        Subjects of Intrest:<input type="checkbox" name="soi"> CLoud computing<br> 
+                             <input type="checkbox" name="soi"> Machine Learning<br>
             <input type="submit" name="Submit">
-        </form></div>
+        </form></pre></div>
     </body>
 </html>
