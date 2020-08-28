@@ -2,12 +2,14 @@
 <html>
     <head><title>Form</title>
         <style>
+            form{
+                text-align : center;
+            }
             h1{
                 text-align:center;
                 color: blueviolet;
             }
             body{
-                text-align : center;
                 background-color: black;
                 color: white;
                 background-image: url("man.jpg");
@@ -15,6 +17,18 @@
                 background-repeat: no-repeat;
                 font-family: serif;
                 font-style: italic;
+            }
+            img{
+                width: 400px;
+            }
+            .image{
+                position: fixed;
+                margin-left: 15px;
+                margin-top: 100px;
+                width: 150px;
+            }
+            .f{
+                margin-top: 10px;
             }
             input[type=submit]{
                 background-color: chocolate;
@@ -35,7 +49,8 @@
     
     </head>
     <body>
-        <h1>Registration Form</h1><div class="regf"><pre>
+        <h1>Registration Form</h1><div class="regf"><pre><div class="image">
+                <img src="car.jpg"></div><div class = "f">
         <form action="next.html">
               Name:               <input type= "text" id="name"><br>
               Mobile Number:      <input type= "number" id="mnum"><br>
@@ -45,6 +60,6 @@ Choice of Course:   <input type = "radio" id="cc" name="course">Bachelor<br>
         Subjects of Intrest:<input type="checkbox" name="soi"> CLoud computing<br> 
                              <input type="checkbox" name="soi"> Machine Learning<br>
             <input type="submit" name="Submit">
-        </form></pre></div>
+        </form></div></pre></div>
     </body>
 </html>
