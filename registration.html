@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <style>
+            ul{
+                background-color: black;
+                height: 40px;
+                padding-top: 15px;
+                padding-left: opx;
+            }
+            li{
+                display: inline;
+                padding-right: 20px;
+                padding-left: 0px;
+            }
+            li a{
+                text-decoration: none;
+                color: white;
+                padding-left: 0px;
+                list-style-type: none;
+            }
+            img{
+                width: 120px;
+                position: static;
+            }
+            .tl{
+                float:right;
+                font-size: 30px;
+                padding-right: 30px;
+                text-decoration: underline;
+                color: darkblue;
+                padding-top: 0px;
+            }
+            h3{
+                padding-left: 0px;
+            }
+            table{
+                margin-left: 50px;
+            }
+            tr,td{
+                text-align: center;
+                padding: 7px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="tl"><a href="https://serc.iiit.ac.in/rdip ">RDIP</a></div><a href="https://www.iiit.ac.in/"><img src ="https://www.iiit.ac.in/img/iiit-new.png"></a><div class="nav">
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="registration.html">Registration From</a></li>
+        </ul></div><form action="details.html">
+        <table >
+            <tr>
+            <td>First Name:</td>
+            <td><input type="text"></td></tr>
+            <tr>
+            <td>E-mail:</td>
+            <td><input type="text"></td></tr>
+            <tr>
+            <td>Phone No:</td>
+            <td><input type="number"></td></tr>
+            <tr>
+            <td>Gender:</td>
+            <td><input type="radio" name="gen">Male<input type="radio" name="gen">Female<input type="radio" name="gen">Other</td>
+            </tr>
+            <tr>
+            <td>Reason for RDIP:</td>
+            <td><input type="checkbox" name="rea">HTML<input type="checkbox" name="rea">CSS<input type="checkbox" name="rea">Javascript</td>
+            </tr>
+            <tr>
+            <td>College:</td>
+            <td><input type="text" name="clg"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="dec"></td>
+                <td>I declare above details given by me are ture.</td>
+            </tr>
+            <tr>
+            <td><input type="submit" value="submit"></td>
+             <td><input type=reset value="reset"></td>
+            </tr>
+        </table></form>
+    </body>
+</html>
