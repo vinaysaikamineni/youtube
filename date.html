@@ -11,6 +11,7 @@
             var val = document.getElementById("num").value;
             var an = "";
             var first=0,second=1,next=0;
+            try{
             if(val > 10 && val <100)
                 {
                     for (var c = 0 ; c < val ; c++ )
@@ -29,7 +30,12 @@
                     document.getElementById("ans").innerHTML=an;
                     
                 }else{
-                    alert("Enter proper number");
+                    throw "invalid_number";
+                }
+            }
+            catch(err)
+                {
+                    alert(err)
                 }
             
         }
