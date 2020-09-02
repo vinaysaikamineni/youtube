@@ -1,13 +1,37 @@
 <html>
     <head></head>
     <body>
-        <input type=date id = "date">
+        number should be greater than 10 and less than 100 !<br>
+        <input type=text id = "num">
         <input type=submit onclick="fun()">
+        <p id="ans"></p>
     </body>
     <script>
         function fun(){
-            var da= document.getElementById("date").value;
-            console.log(da);
+            var val = document.getElementById("num").value;
+            var an = "";
+            var first=0,second=1,next=0;
+            if(val > 10 && val <100)
+                {
+                    for (var c = 0 ; c < val ; c++ )
+                    {
+                        if ( c <= 1 )
+                            next = c;
+                        else
+                        {
+                            next = first + second;
+                            first = second;
+                            second = next;
+                        }
+                        
+                        an = an+ " "+next;
+                    }
+                    document.getElementById("ans").innerHTML=an;
+                    
+                }else{
+                    alert("Enter proper number");
+                }
+            
         }
     </script>
 </html>
