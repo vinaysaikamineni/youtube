@@ -1,12 +1,28 @@
 <html>
     <body>
-        <h1>DONT TOUCH BUTTON</h1>
-        <button onclick="some()">ME</button>
+        <h1>REGX</h1>
+        <input type="text" id="hi"><br>
+        <button onclick="some()">check</button><br>
+        <p id="para"></p>
         <script>
             function some()
             {
-                alert("OKAY");
+                inputtxt = document.getElementById("hi").value;
+                var letters = /^[A-Za-z]+$/;
+      if(inputtxt.match(letters))
+      {
+      alert('PASSED');
+      return true;
+      }
+      else
+      {
+      alert('Please input alphabet characters only');
+          
+      return false;
+      }
+                
             }
+            
         </script>
     </body>
 </html>
