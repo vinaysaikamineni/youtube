@@ -33,7 +33,7 @@
     <body><div class="tab">
         <h1>SEM END RESULTS</h1>
         </div>
-        <table title="SEM RESULTS">
+        <table title="SEM RESULTS" id="sem">
             <tr  class="abcd">
                 <th class = "left">Subject</th>
                 <th>Marks</th>
@@ -70,5 +70,24 @@
                 <td>Pass</td>
             </tr>
         </table>
+        <button  onclick="total()">AVG</button>
+        <script>
+            function total(){
+                var table = document.getElementById("sem");
+            var sum = 0;
+                for(var i = 1 ; i <= table.rows.length-1;i++)
+                    {
+                        sum = sum + parseInt(table.rows[i].cells[1].innerHTML);
+                    }
+                var avg = sum/(table.rows.length-1);
+                
+                var adr = table.insertRow(-1);
+                adr.insertCell(0).textContent = "Total";
+                adr.insertCell(1).textContent = sum;
+                var adr = table.insertRow(-1);
+                adr.insertCell(0).textContent = "Avg";
+                adr.insertCell(1).textContent = avg;
+            }
+        </script>
     </body>
 </html>
