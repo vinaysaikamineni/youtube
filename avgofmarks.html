@@ -1,26 +1,23 @@
 <html>
     <body>
-        <h1>REGX</h1>
+        <h1>MATH</h1>
         <input type="text" id="hi"><br>
-        <button onclick="some()">check</button><br>
+        <button onclick="mat()">submit</button><br>
         <p id="para"></p>
         <script>
-            function some()
+            function mat()
             {
-                inputtxt = document.getElementById("hi").value;
-                var letters = /^[A-Za-z]+$/;
-      if(inputtxt.match(letters))
-      {
-      alert('PASSED');
-      return true;
-      }
-      else
-      {
-      alert('Please input alphabet characters only');
-          
-      return false;
-      }
-                
+                var num = document.getElementById("hi").value;
+                var ans=""
+                ans= ans+"POW:"+ Math.pow(Math.ceil(num),2);
+                ans = ans +"CEIL:"+ Math.ceil(num);
+                ans = ans +"abs:"+ Math.abs(-num);
+                var ran = Math.random();
+                ans = ans + "RANDOM:"+ran;
+                ans = ans +"CEIL:"+ Math.ceil(ran);
+                ans= ans+"ROUND:"+Math.round(ran);
+                ans=ans+"FLOOR:"+Math.floor(ran);
+                document.getElementById("para").innerHTML = ans;
             }
             
         </script>
