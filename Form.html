@@ -25,7 +25,7 @@
             }
             .image{
                 position: fixed;
-                margin-left: 15px;
+                margin-left: 0px;
                 margin-top: 100px;
                 width: 150px;
             }
@@ -39,11 +39,6 @@
                 width: 100px;
                 font-size: 15px;
             }
-            input[type=submit]:hover{
-                background-color: aqua;
-                font-size: 20px;
-                
-            }
             input[type=submit]:visited{
                 background-color: cadetblue;
             }
@@ -55,13 +50,13 @@
                 <img src="car.jpg"></div><div class = "f">
         <form action="next.html">
               Name:               <input type= "text" id="name"><br>
-              Mobile Number:      <input type= "number" id="mnum"><br>
+              Mobile Number:      <input type= "text" id="mnum" onblur="mobile()"><br>
 Choice of Course:   <input type = "radio" id="cc" name="course">Bachelor<br>
                   <input type="radio" id = "cc1" name="course">Master<br>
    Description:         <textarea name="desc" rows="2" cols="10"></textarea><br>
-        Subjects of Intrest:<input type="checkbox" name="soi"> CLoud computing<br> 
-                             <input type="checkbox" name="soi"> Machine Learning<br>
-            <input type="submit" name="Submit">
+        Subjects of Intrest:<input type="checkbox" name="soi" id="soi"> Cloud computing<br> 
+                             <input type="checkbox" name="soi" id="soi"> Machine Learning<br>
+            <input type="submit" name="Submit" id="subm" onsubmit=return "valid()">
         </form></div></pre></div>
         <pre>
         
@@ -82,5 +77,30 @@ Choice of Course:   <input type = "radio" id="cc" name="course">Bachelor<br>
                                     <h5>copyrights@vinayk</h5>
         
         </pre>
+        <script>
+            var flag = 0;
+            function valid(){
+                var num = /^[0-9]+$/;
+                inp = document.getElementById("mnum");
+                documen.write("hello:)");
+                if(inp.match(num)){
+                    return true;
+                }else{
+                    return false;
+                }
+                /*var checkboxes = $("input[type='checkbox']");
+                if(checkboxes.is(":checked")){
+                    flag = 0;
+                }else{
+                    flag = 1;
+                }
+                if(flag==1){
+                    return true;
+                }else{
+                    return false;
+                }*/
+            }
+            
+        </script>
     </body>
 </html>
