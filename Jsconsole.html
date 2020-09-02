@@ -2,8 +2,17 @@
     <head>
         <title>SCRIPT</title>
     </head>
-    <body>
-        <h2>Java Script :</h2>
-        <script src="main.js"></script>
+    <body onload="fun1()">
+        <input type="submit" onmouseover="fun()" value="submit">
+        <script>
+            function fun()
+            {
+                alert("Placed on submit");
+            }
+            function fun1()
+            {
+                alert("Paged loaded");
+            }
+        </script>
     </body>
 </html>
