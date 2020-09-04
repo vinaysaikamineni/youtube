@@ -20,6 +20,7 @@
                 
             }
         </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <body>
         <div class="row">
@@ -31,7 +32,7 @@
             <p>Bootstrap is a free and open-source tool collection for creating responsive websites and web applications. It is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first web sites. It solves many problems which we had once, one of which is the cross-browser compatibility issue. Nowadays, the websites are perfect for all the browsers (IE, Firefox and Chrome) and for all sizes of screens (Desktop, Tablets, Phablets, and Phones). All thanks to Bootstrap developers -Mark Otto and Jacob Thornton of Twitter, though it was later declared to be an open-source project.</p>
             </div></div>
         <div class="col-md-6">
-            <img src="capam.jpg" class="rounded-circle">
+            <img src="capam.jpg" class="rounded-circle" id="cap">
         </div></div>
         <div class="row">
             <div class="col-md-6">
@@ -54,6 +55,10 @@
                 </ol>
             </div>
             </div>
-        
+        <script>
+                $(".container").click(function(){
+                    $(".rounded-circle").toggle(1000);
+                });
+        </script>
     </body>
 </html>
