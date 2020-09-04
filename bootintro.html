@@ -16,8 +16,8 @@
                 height: 200px;
                 margin-left:200px;
             }
-            .container{
-                
+            .container1{
+                color: crimson;
             }
         </style>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -56,8 +56,11 @@
             </div>
             </div>
         <script>
-                $(".container").click(function(){
-                    $(".rounded-circle").toggle(1000);
+                $(".rounded-circle").dblclick(function(){
+                    $(".row").toggleClass("container1");
+                    $(".container").fadeToggle(1000,function(){
+                        alert("YUP!!!");
+                    });
                 });
         </script>
     </body>
