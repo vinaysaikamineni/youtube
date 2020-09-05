@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <input type="text" id="name"><br>
+        <input type="text" id ="coun"><br>
+        <input type="submit" value="submit" id="btn">
+        <script>
+            $("#btn").click(function(){
+                $.post("first.asp",{nm:"vinay",cn:"india"},function(name1,country){
+                    alert("You are "+name1+" and are from "+countryn);
+                });
+            });
+        </script>
+    </body>
+</html>
